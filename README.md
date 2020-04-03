@@ -2,7 +2,7 @@
 
 A [WTF](https://wtfutil.com/) (`wtfutil`) dashboard module for the COVID-19 data from the Ohio Department of Health
 
-Data: https://coronavirus.ohio.gov/wps/portal/gov/covid-19/home
+Data: https://coronavirus.ohio.gov/
 
 ![](screenshot.png)
 
