@@ -8,7 +8,7 @@ build:
 	@DOCKER_BUILDKIT=1 docker build --tag=$(IMAGE) .
 
 run:
-	@docker run $(IMAGE)
+	@docker run --rm $(IMAGE)
 
 test:
 	@pipenv run coverage run --source=. --omit=tests/test_app.py -m pytest
