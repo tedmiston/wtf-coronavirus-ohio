@@ -7,4 +7,4 @@ RUN pip install requests-html==0.10.0
 
 COPY . .
 
-CMD [ "python", "app.py" ]
+CMD [ "python", "-m", "app" ]
