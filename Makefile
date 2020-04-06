@@ -12,7 +12,7 @@ run:
 
 .PHONY: test
 test:
-	@pipenv run coverage run --source=. --omit=tests/test_app.py -m pytest
+	@poetry run coverage run --source=. --omit=tests/test_app.py -m pytest
 
 .PHONY: coverage
 coverage:

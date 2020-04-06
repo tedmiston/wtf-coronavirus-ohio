@@ -1,2 +1,4 @@
 *
 !app.py
+!poetry.lock
+!pyproject.toml

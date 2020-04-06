@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "wtf-covid-19-ohio"
+version = "1.0.0"
+description = "A WTF (wtfutil) dashboard module for the COVID-19 data from the Ohio Department of Health"
+authors = ["Taylor D. Edmiston <tedmiston@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests-html = "*"
+
+[tool.poetry.dev-dependencies]
+black = {version = "^19.10b0", allow-prereleases = true}
+coverage = "^5.0.4"
+pytest = "^5.4.1"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
