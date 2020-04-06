@@ -24,14 +24,12 @@ def fetch():
 
 def parse(html):
     """Scrape metrics tiles from page."""
-    stats_cards = html.xpath(
-        '//*[@id="odx-main-content"]/article/section[2]/div', first=True
-    )
-    tiles = stats_cards.find(".odh-ads__item")[:8]
+    stats_cards = html.find(".stats-cards__container", first=True)
+    tiles = stats_cards.find(".stats-cards__item")[:8]
     metrics = [
         Metric(
-            label=tile.find(".odh-ads__item-summary", first=True).text,
-            value=tile.find(".odh-ads__item-title", first=True).text,
+            label=tile.find(".stats-cards__label", first=True).text,
+            value=tile.find(".stats-cards__number", first=True).text,
         )
         for tile in tiles
     ]
