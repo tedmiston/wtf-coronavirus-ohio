@@ -1,4 +1,4 @@
-.PHONY: build coverage format format-dry-run push run test
+.PHONY: build coverage coverage-html format format-dry-run push run test
 
 NAME=tedmiston/wtf-covid-19-ohio
 TAG=latest
@@ -15,6 +15,9 @@ test:
 
 coverage:
 	@coverage report
+
+coverage-html:
+	@coverage html
 
 format-dry-run:
 	@black --diff .
