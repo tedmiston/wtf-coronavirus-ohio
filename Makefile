@@ -4,15 +4,19 @@ IMAGE=$(NAME):$(TAG)
 
 .PHONY: build
 build:
-	@DOCKER_BUILDKIT=1 docker build --tag=$(IMAGE) .
+	@DOCKER_BUILDKIT=1 docker build --target=prod --tag=$(IMAGE) .
+
+.PHONY: build-test
+build-test:
+	@DOCKER_BUILDKIT=1 docker build --target=test --tag=$(IMAGE)-test .
 
 .PHONY: run
 run:
 	@docker run --rm $(IMAGE)
 
 .PHONY: test
-test:
-	@poetry run coverage run --source=. --omit=tests/test_app.py -m pytest
+test: build-test
+	@docker run --rm $(IMAGE)-test
 
 .PHONY: coverage
 coverage:
