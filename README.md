@@ -14,7 +14,7 @@ Requires [WTF](https://github.com/wtfutil/wtf) and [Docker](https://www.docker.c
 
 ## Install
 
-Add the module config to `wtf.mods` in your WTF config file:
+Add the `covid-19-ohio` module config to `wtf.mods` in your WTF config file:
 
 ```yaml
 wtf:
