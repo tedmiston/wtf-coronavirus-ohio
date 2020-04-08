@@ -1,0 +1,6 @@
+*
+!/app.py
+!/cache.py
+!/poetry.lock
+!/pyproject.toml
+!/tests/test_app.py
