@@ -305,6 +305,17 @@ socks = ["PySocks (>=1.5.6,<1.5.7 || >1.5.7)", "win-inet-pton"]
 
 [[package]]
 category = "main"
+description = "Persistent cache for requests library"
+name = "requests-cache"
+optional = false
+python-versions = "*"
+version = "0.5.2"
+
+[package.dependencies]
+requests = ">=1.1.0"
+
+[[package]]
+category = "main"
 description = "HTML Parsing for Humans."
 name = "requests-html"
 optional = false
@@ -404,7 +415,7 @@ python-versions = ">=3.6.1"
 version = "8.1"
 
 [metadata]
-content-hash = "d665074d2b8199ccdc0035aa2a1eeb3b0b1214db4248bec44e42d54e9fc02df2"
+content-hash = "31407979a9cedba3b45e3995d156131ef515bd92229a61889a9b2c75d1313549"
 python-versions = "^3.8"
 
 [metadata.files]
@@ -589,6 +600,10 @@ regex = [
 requests = [
     {file = "requests-2.23.0-py2.py3-none-any.whl", hash = "sha256:43999036bfa82904b6af1d99e4882b560e5e2c68e5c4b0aa03b655f3d7d73fee"},
     {file = "requests-2.23.0.tar.gz", hash = "sha256:b3f43d496c6daba4493e7c431722aeb7dbc6288f52a6e04e7b6023b0247817e6"},
+]
+requests-cache = [
+    {file = "requests-cache-0.5.2.tar.gz", hash = "sha256:813023269686045f8e01e2289cc1e7e9ae5ab22ddd1e2849a9093ab3ab7270eb"},
+    {file = "requests_cache-0.5.2-py2.py3-none-any.whl", hash = "sha256:81e13559baee64677a7d73b85498a5a8f0639e204517b5d05ff378e44a57831a"},
 ]
 requests-html = [
     {file = "requests-html-0.10.0.tar.gz", hash = "sha256:7e929ecfed95fb1d0994bb368295d6d7c4d06b03fcb900c33d7d0b17e6003947"},

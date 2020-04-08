@@ -12,6 +12,8 @@ Data: https://coronavirus.ohio.gov/
 
 Requires [WTF](https://github.com/wtfutil/wtf) and [Docker](https://www.docker.com/).
 
+If SQLite is available, it will be used as a cache.
+
 ## Install
 
 Add the `covid-19-ohio` module config to `wtf.mods` in your WTF config file:

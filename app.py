@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 
+from cache import setup_cache ; setup_cache()
 from requests_html import HTMLSession
 
 

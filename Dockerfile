@@ -6,6 +6,7 @@ RUN pip install --upgrade pip
 RUN pip install poetry
 
 COPY app.py ./app.py
+COPY cache.py ./cache.py
 COPY poetry.lock ./poetry.lock
 COPY pyproject.toml ./pyproject.toml
 
