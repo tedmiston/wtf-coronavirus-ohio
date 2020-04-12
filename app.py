@@ -26,7 +26,7 @@ def fetch():
 def parse(html):
     """Scrape metrics tiles from page."""
     stats_cards = html.find(".stats-cards__container", first=True)
-    tiles = stats_cards.find(".stats-cards__item")[:8]
+    tiles = stats_cards.find(".stats-cards__item")
     metrics = [
         Metric(
             label=tile.find(".stats-cards__label", first=True).text,
@@ -41,9 +41,13 @@ def clean(metrics):
     """Post-process tile labels."""
     for i in metrics:
         i.label = (
-            i.label.replace("Number of", "")
-            .replace("in Ohio", "")
+            i.label.lower()
+            .replace("number of", "")
+            .replace("in ohio", "")
+            .replace("expanded case definition (probable)", "expanded cases")
+            .replace("expanded death definition (probable)", "expanded deaths")
             .title()
+            .replace("Cdc", "CDC")
             .replace("Icu", "ICU")
             .strip()
         )
@@ -52,8 +56,9 @@ def clean(metrics):
 
 def display(metrics):
     """Output metrics tiles to console."""
+    divider_indices = (2, 3, 6, 7, 9)
     for idx, i in enumerate(metrics):
-        print(i, end=("\n\n" if idx in [3, 5] else "\n"))
+        print(i, end=("\n\n" if idx in divider_indices else "\n"))
 
 
 def main():
