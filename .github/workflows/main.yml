@@ -19,3 +19,6 @@ jobs:
       run: make run
     - name: Push
       run: make push
+      env:
+        DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+        DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
