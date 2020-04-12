@@ -36,7 +36,7 @@ format:
 
 .PHONY: push
 push:
-	@docker push $(IMAGE)
+	@./ci/push.sh $(IMAGE)
 
 cache-clear:
 	@rm "${HOME}/.wtf-covid-19-ohio/cache.sqlite"
