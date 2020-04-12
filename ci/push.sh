@@ -9,7 +9,7 @@ GITHUB_ACTIONS=${GITHUB_ACTIONS:-false}
 IMAGE=${1}
 
 if [ "${GITHUB_ACTIONS}" == true ]; then
-    docker login --username="${DOCKER_USERNAME}" --password="${DOCKER_PASSWORD}"
+    echo "${DOCKER_PASSWORD}" | docker login --username="${DOCKER_USERNAME}" --password-stdin
 fi
 
 docker push "${IMAGE}"
