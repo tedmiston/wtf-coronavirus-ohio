@@ -1,6 +1,8 @@
 from dataclasses import dataclass
 
-from cache import setup_cache ; setup_cache()
+from cache import setup_cache
+
+setup_cache()  # must run before htmlsession import
 from requests_html import HTMLSession
 
 
