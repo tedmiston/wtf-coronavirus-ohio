@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+# Override Docker Hub Autobuild command.
+
+make build
