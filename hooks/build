@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-# Override Docker Hub Autobuild command.
-
-export DOCKER_BUILDKIT=1
-
-docker build --target=prod --tag="${IMAGE_NAME}" .
