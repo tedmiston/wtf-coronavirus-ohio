@@ -18,6 +18,7 @@ jobs:
     - name: Run
       run: make run
     - name: Push
+      if: github.ref == 'refs/heads/master'
       run: make push
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
