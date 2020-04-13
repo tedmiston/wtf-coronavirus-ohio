@@ -2,9 +2,9 @@
 
 A [WTF](https://wtfutil.com/) (`wtfutil`) dashboard module for the COVID-19 data from the Ohio Department of Health
 
-![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/tedmiston/wtf-covid-19-ohio)
-![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/tedmiston/wtf-covid-19-ohio)
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+![Docker Image Version](https://img.shields.io/docker/v/tedmiston/wtf-covid-19-ohio?sort=semver)
+![Code Style: Black](https://img.shields.io/badge/code%20style-black-000000.svg)
+![GitHub Actions Workflow Status](https://github.com/tedmiston/wtf-covid-19-ohio/workflows/CI/badge.svg)
 
 Docker Image: [tedmiston/wtf-covid-19-ohio](https://hub.docker.com/r/tedmiston/wtf-covid-19-ohio)
 
