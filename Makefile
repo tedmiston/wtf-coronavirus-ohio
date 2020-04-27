@@ -20,7 +20,7 @@ test: build-test
 
 .PHONY: mypy
 mypy:
-	@mypy --strict --ignore-missing-imports . tests/
+	@poetry run mypy --strict --ignore-missing-imports . tests/
 
 .PHONY: coverage
 coverage:
@@ -33,6 +33,10 @@ coverage-html:
 .PHONY: coverage-html-show
 coverage-html-show:
 	@cd htmlcov/ && open http://localhost:8000 && poetry run python -m http.server
+
+.PHONY: format-check
+format-check:
+	@black --check .
 
 .PHONY: format-dry-run
 format-dry-run:
