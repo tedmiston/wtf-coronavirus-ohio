@@ -12,7 +12,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Install
-      run: poetry install
+      run: pip install poetry && poetry install
     - name: Build
       run: make build
     - name: Test
