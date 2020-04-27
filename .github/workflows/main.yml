@@ -14,7 +14,7 @@ jobs:
     - name: Build
       run: make build
     - name: Test
-      run: make format-check mypy test
+      run: make format-check mypy test coverage
     - name: Run
       run: make run
     - name: Push
