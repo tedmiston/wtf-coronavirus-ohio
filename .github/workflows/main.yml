@@ -2,7 +2,6 @@ name: CI
 
 on:
   push:
-    branches: [ master ]
   pull_request:
     branches: [ master ]
 
@@ -11,12 +10,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    - name: Setup Python
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.8
     - name: Install
-      run: pip install poetry && poetry install
+      run: |
+        pip install --upgrade pip
+        pip install poetry
+        poetry install
+    - name: Lint
+      run: make format-check mypy
+    - name: Unit Tests
+      run: make test coverage
     - name: Build
       run: make build
-    - name: Test
-      run: make format-check mypy test coverage
+    - name: Docker Test
+      run: make test-docker
     - name: Run
       run: make run
     - name: Push
