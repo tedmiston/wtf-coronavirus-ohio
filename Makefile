@@ -24,11 +24,11 @@ mypy:
 
 .PHONY: coverage
 coverage:
-	@coverage report
+	@poetry run coverage report
 
 .PHONY: coverage-html
 coverage-html:
-	@coverage html
+	@poetry run coverage html
 
 .PHONY: coverage-html-show
 coverage-html-show: coverage-html
@@ -36,15 +36,15 @@ coverage-html-show: coverage-html
 
 .PHONY: format-check
 format-check:
-	@black --check .
+	@poetry run black --check .
 
 .PHONY: format-dry-run
 format-dry-run:
-	@black --diff .
+	@poetry run black --diff .
 
 .PHONY: format
 format:
-	@black .
+	@poetry run black .
 
 .PHONY: push
 push:
