@@ -1,7 +1,7 @@
 from app import Metric, clean
 
 
-def test_clean():
+def test_clean() -> None:
     actual = clean(
         metrics=[
             Metric(label="Confirmed Cases in Ohio", value="4,043"),

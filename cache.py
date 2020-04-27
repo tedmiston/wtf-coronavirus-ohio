@@ -3,7 +3,7 @@ from pathlib import Path
 import requests_cache
 
 
-def setup_cache():
+def setup_cache() -> None:
     """
     The requests_cache package monkey patches `requests.Session` (used by requests_html) so `requests_cache.install_cache` must be called before `requests_html.HTMLSession` is imported.
     """

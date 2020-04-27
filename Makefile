@@ -18,6 +18,10 @@ run:
 test: build-test
 	@docker run --rm $(IMAGE)-test
 
+.PHONY: mypy
+mypy:
+	@mypy --strict --ignore-missing-imports . tests/
+
 .PHONY: coverage
 coverage:
 	@coverage report

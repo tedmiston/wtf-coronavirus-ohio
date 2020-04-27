@@ -8,6 +8,7 @@ authors = ["Taylor D. Edmiston <tedmiston@gmail.com>"]
 python = "^3.8"
 requests-html = "^0.10.0"
 requests-cache = "^0.5.2"
+mypy = "^0.770"
 
 [tool.poetry.dev-dependencies]
 black = {version = "*", allow-prereleases = true}
