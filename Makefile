@@ -31,7 +31,7 @@ coverage-html:
 	@coverage html
 
 .PHONY: coverage-html-show
-coverage-html-show:
+coverage-html-show: coverage-html
 	@cd htmlcov/ && open http://localhost:8000 && poetry run python -m http.server
 
 .PHONY: format-check
