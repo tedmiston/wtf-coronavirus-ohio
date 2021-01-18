@@ -4,11 +4,11 @@ IMAGE=$(NAME):$(TAG)
 
 .PHONY: build
 build:
-	DOCKER_BUILDKIT=1 docker build --target=prod --tag=$(IMAGE) .
+	docker build --target=prod --tag=$(IMAGE) .
 
 .PHONY: build-test
 build-test:
-	DOCKER_BUILDKIT=1 docker build --target=test --tag=$(IMAGE)-test .
+	docker build --target=test --tag=$(IMAGE)-test .
 
 .PHONY: run
 run:
