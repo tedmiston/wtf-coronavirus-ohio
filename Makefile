@@ -16,7 +16,7 @@ run:
 
 .PHONY: test
 test:
-	poetry run coverage run --source=. --omit=tests/*.py -m pytest
+	poetry run coverage run --source=app --omit=tests/*.py -m pytest
 
 .PHONY: test-docker
 test-docker: build-test

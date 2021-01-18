@@ -1,21 +1,10 @@
-from dataclasses import dataclass
 from typing import List
 
-from cache import setup_cache
+from .cache import setup_cache
+from .models import Metric
 
 setup_cache()  # must run before htmlsession import
 from requests_html import HTML, HTMLSession
-
-
-@dataclass
-class Metric:
-    """A metric."""
-
-    label: str
-    value: str
-
-    def __str__(self) -> str:
-        return f"{self.value.rjust(7)}  {self.label}"
 
 
 def fetch() -> HTML:

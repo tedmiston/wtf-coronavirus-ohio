@@ -1,6 +1,8 @@
 *
-!/app.py
-!/cache.py
+!/app/__init__.py
+!/app/__main__.py
+!/app/cache.py
+!/app/models.py
 !/poetry.lock
 !/pyproject.toml
 !/tests/test_app.py

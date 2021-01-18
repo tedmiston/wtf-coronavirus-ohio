@@ -1,4 +1,5 @@
-from app import Metric, clean
+from app import clean
+from app.models import Metric
 
 
 def test_clean() -> None:
