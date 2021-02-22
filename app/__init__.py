@@ -43,7 +43,11 @@ def clean(metrics: List[Metric]) -> List[Metric]:
             .replace("Icu", "ICU")
             .strip()
         )
-        i.value = i.value.replace("*", "")
+        i.value = (
+            i.value
+            .replace("*", "")
+            .replace("-", "–")
+        )
     return metrics
 
 
