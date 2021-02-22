@@ -8,4 +8,4 @@ class Metric(BaseModel):
     value: str
 
     def __str__(self) -> str:
-        return f"{self.value.rjust(7)}  {self.label}"
+        return f"{self.value.rjust(9)}  {self.label}"
