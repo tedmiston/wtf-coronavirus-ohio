@@ -10,7 +10,7 @@ A [WTF](https://wtfutil.com/) (`wtfutil`) dashboard module for the COVID-19 data
 
 Docker Image: [tedmiston/wtf-covid-19-ohio](https://hub.docker.com/r/tedmiston/wtf-covid-19-ohio)
 
-Data: https://coronavirus.ohio.gov/
+Data: [coronavirus.ohio.gov](https://coronavirus.ohio.gov/)
 
 ![](screenshot.png)
 
