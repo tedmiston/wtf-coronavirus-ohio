@@ -23,8 +23,8 @@ def test_clean() -> None:
         Metric(label="Deaths", value="119"),
         Metric(label="Age Range", value="<1–101"),
         Metric(label="Median Age", value="53"),
-        Metric(label="Sex - Males", value="48%*"),
-        Metric(label="Sex - Females", value="51%*"),
+        Metric(label="Sex - Males", value="48%"),
+        Metric(label="Sex - Females", value="51%"),
     ]
 
     assert expected == actual
