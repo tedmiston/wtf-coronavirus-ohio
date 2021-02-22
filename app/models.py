@@ -1,8 +1,7 @@
-from dataclasses import dataclass
+from pydantic import BaseModel
 
 
-@dataclass
-class Metric:
+class Metric(BaseModel):
     """A metric."""
 
     label: str
