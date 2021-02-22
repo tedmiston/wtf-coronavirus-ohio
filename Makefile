@@ -2,6 +2,8 @@ NAME=tedmiston/wtf-covid-19-ohio
 TAG=latest
 IMAGE=$(NAME):$(TAG)
 
+# -- build --
+
 .PHONY: build
 build:
 	docker build --target=prod --tag=$(IMAGE) .
@@ -10,9 +12,13 @@ build:
 build-test:
 	docker build --target=test --tag=$(IMAGE)-test .
 
+# -- run --
+
 .PHONY: run
 run:
 	docker run --rm $(IMAGE)
+
+# -- test --
 
 .PHONY: test
 test:
@@ -22,9 +28,13 @@ test:
 test-docker: build-test
 	docker run --rm $(IMAGE)-test
 
+# -- mypy --
+
 .PHONY: mypy
 mypy:
 	poetry run mypy --strict --ignore-missing-imports . tests/
+
+# -- coverage --
 
 .PHONY: coverage
 coverage:
@@ -38,6 +48,8 @@ coverage-html:
 coverage-html-show: coverage-html
 	cd htmlcov/ && open http://localhost:8000 && poetry run python -m http.server
 
+# -- format --
+
 .PHONY: format-check
 format-check:
 	poetry run black --check .
@@ -49,6 +61,8 @@ format-dry-run:
 .PHONY: format
 format:
 	poetry run black .
+
+# -- misc --
 
 .PHONY: push
 push:
