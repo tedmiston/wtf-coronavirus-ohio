@@ -4,6 +4,10 @@ IMAGE=$(NAME):$(TAG)
 
 # -- build --
 
+.PHONY: clean
+clean:
+	rm -rf .mypy_cache/ .pytest_cache/ **/__pycache__/ .coverage htmlcov/
+
 .PHONY: build
 build:
 	docker build --target=prod --tag=$(IMAGE) .
