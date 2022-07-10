@@ -8,11 +8,11 @@ authors = ["Taylor D. Edmiston <tedmiston@gmail.com>"]
 python = "^3.8"
 requests-html = "^0.10.0"
 requests-cache = "^0.5.2"
-mypy = "^0.770"
 pydantic = "^1.7.3"
 
 [tool.poetry.dev-dependencies]
-black = "*"
+mypy = "^0.961"
+black = "^22.6.0"
 coverage = "*"
 pytest = "*"
 
