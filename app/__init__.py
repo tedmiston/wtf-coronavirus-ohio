@@ -1,59 +1,10 @@
 from typing import List
 
 from .cache import setup_cache
+from .display import clean, display
+from .fetch import fetch
 from .models import Metric
-
-setup_cache()  # must run before htmlsession import
-from requests_html import HTML, HTMLSession
-
-
-def fetch() -> HTML:
-    """Retrieve html of metrics overview page."""
-    url = "https://coronavirus.ohio.gov/wps/portal/gov/covid-19/home"
-    session = HTMLSession()
-    response = session.get(url)
-    return response.html
-
-
-def _parse_tile(tile) -> Metric:
-    metric = Metric(
-        label=tile.find(".stats-cards__label", first=True).text,
-        value=tile.find(".stats-cards__number", first=True).text,
-    )
-    return metric
-
-
-def parse(html: HTML) -> List[Metric]:
-    """Scrape metrics tiles from page."""
-    stats_cards = html.find(".stats-cards__container", first=True)
-    tiles = stats_cards.find(".stats-cards__item")
-    metrics = [_parse_tile(x) for x in tiles]
-    return metrics
-
-
-def clean(metrics: List[Metric]) -> List[Metric]:
-    """Post-process tile labels."""
-    for i in metrics:
-        i.label = (
-            i.label.lower()
-            .replace("number of", "")
-            .replace("in ohio", "")
-            .replace("expanded case definition (probable)", "expanded cases")
-            .replace("expanded death definition (probable)", "expanded deaths")
-            .title()
-            .replace("Cdc", "CDC")
-            .replace("Icu", "ICU")
-            .strip()
-        )
-        i.value = i.value.replace("*", "").replace("-", "–")
-    return metrics
-
-
-def display(metrics: List[Metric]) -> None:
-    """Output metrics tiles to console."""
-    divider_indices = (2, 3, 6, 7, 9)
-    for idx, i in enumerate(metrics):
-        print(i, end=("\n\n" if idx in divider_indices else "\n"))
+from .parse import parse
 
 
 def main() -> None:
