@@ -33,7 +33,7 @@ wtf:
       type: cmdrunner
       title: COVID-19 Ohio
       cmd: docker
-      args: ["run", "--rm", "tedmiston/wtf-covid-19-ohio:v1.2.1"]
+      args: ["run", "--rm", "tedmiston/wtf-covid-19-ohio:v1.2.2"]
       position:
         top: 4
         left: 0

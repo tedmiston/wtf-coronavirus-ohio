@@ -1,6 +1,6 @@
 [tool.poetry]
-version = "1.0.0"
 name = "wtf-coronavirus-ohio"
+version = "1.2.2"
 description = "A WTF dashboard module for coronavirus data from ODH"
 authors = ["Taylor D. Edmiston <tedmiston@gmail.com>"]
 
