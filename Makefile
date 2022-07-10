@@ -14,8 +14,8 @@ build-test:
 
 # -- run --
 
-.PHONY: run
-run:
+.PHONY: run-docker
+run-docker:
 	docker run --rm $(IMAGE)
 
 # -- test --

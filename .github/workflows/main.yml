@@ -40,7 +40,7 @@ jobs:
       run: make test-docker
 
     - name: Run
-      run: make run
+      run: make run-docker
 
     - name: Publish
       if: github.ref == 'refs/heads/master'
