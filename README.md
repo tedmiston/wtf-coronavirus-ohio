@@ -39,7 +39,7 @@ wtf:
         left: 0
         height: 2
         width: 1
-      refreshInterval: 1800  # 30 minutes
+      refreshInterval: 3600  # 3600 seconds == 1 hour
       enabled: true
 ```
 

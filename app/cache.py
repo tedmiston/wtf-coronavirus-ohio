@@ -10,4 +10,4 @@ def setup_cache() -> None:
     cache_path_dir = Path.home() / ".wtf-coronavirus-ohio"
     cache_path_dir.mkdir(exist_ok=True)
     cache_path = cache_path_dir / "cache"
-    requests_cache.install_cache(str(cache_path), backend="sqlite", expire_after=300)
+    requests_cache.install_cache(str(cache_path), backend="sqlite", expire_after=3600)
