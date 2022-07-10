@@ -6,3 +6,6 @@
 !/poetry.lock
 !/pyproject.toml
 !/tests/test_app.py
+!/LICENSE
+!/Makefile
+!/README.md
