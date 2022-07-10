@@ -15,7 +15,6 @@ def test_clean() -> None:
             Metric(label="Sex - Females", value="51%*"),
         ]
     )
-
     expected = [
         Metric(label="Confirmed Cases", value="4,043"),
         Metric(label="ICU Admissions", value="346"),
@@ -26,5 +25,4 @@ def test_clean() -> None:
         Metric(label="Sex - Males", value="48%"),
         Metric(label="Sex - Females", value="51%"),
     ]
-
     assert expected == actual
