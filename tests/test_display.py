@@ -1,4 +1,4 @@
-from app import clean
+from app.display import clean
 from app.models import Metric
 
 

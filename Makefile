@@ -40,7 +40,7 @@ test-docker: build-test
 
 .PHONY: mypy
 mypy:
-	poetry run mypy --strict --ignore-missing-imports . tests/
+	poetry run mypy --strict --ignore-missing-imports .
 
 # -- coverage --
 
