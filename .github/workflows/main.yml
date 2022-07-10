@@ -32,8 +32,8 @@ jobs:
 
     - name: Unit Tests
       run: make test coverage
-    - name: Build
 
+    - name: Docker Build
       run: make build
 
     - name: Docker Test
@@ -41,8 +41,8 @@ jobs:
 
     - name: Run
       run: make run
-    - name: Push
 
+    - name: Publish
       if: github.ref == 'refs/heads/master'
       run: make push
       env:
@@ -54,8 +54,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Build + Push
 
+    - name: Publish
       run: make build push -- TAG=${GITHUB_REF##*/}
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
