@@ -12,7 +12,7 @@ mypy = "^0.770"
 pydantic = "^1.7.3"
 
 [tool.poetry.dev-dependencies]
-black = {version = "*", allow-prereleases = true}
+black = "*"
 coverage = "*"
 pytest = "*"
 
