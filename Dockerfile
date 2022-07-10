@@ -10,7 +10,7 @@ COPY . .
 
 FROM base AS test
 RUN poetry install
-CMD [ "poetry", "run", "coverage", "run", "--source=.", "--omit=tests/*.py", "-m", "pytest" ]
+CMD [ "poetry", "run", "coverage", "run", "--source=app", "-m", "pytest" ]
 
 FROM base AS prod
 RUN poetry install --no-dev
