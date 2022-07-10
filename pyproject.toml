@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "wtf-covid-19-ohio"
 version = "1.0.0"
-description = "A WTF (wtfutil) dashboard module for the COVID-19 data from the Ohio Department of Health"
+name = "wtf-coronavirus-ohio"
+description = "A WTF dashboard module for coronavirus data from ODH"
 authors = ["Taylor D. Edmiston <tedmiston@gmail.com>"]
 
 [tool.poetry.dependencies]

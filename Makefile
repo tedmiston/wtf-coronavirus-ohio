@@ -69,4 +69,4 @@ push:
 	./ci/push.sh $(IMAGE)
 
 cache-clear:
-	rm "${HOME}/.wtf-covid-19-ohio/cache.sqlite"
+	rm "${HOME}/.wtf-coronavirus-ohio/cache.sqlite"

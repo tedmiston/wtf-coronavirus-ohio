@@ -4,9 +4,9 @@ A [WTF](https://wtfutil.com/) (`wtfutil`) dashboard module for [COVID-19 pandemi
 
 ![Docker Image Version](https://img.shields.io/docker/v/tedmiston/wtf-covid-19-ohio?sort=semver)
 ![Code Style: Black](https://img.shields.io/badge/code%20style-black-000000.svg)
-![GitHub Actions Workflow Status](https://github.com/tedmiston/wtf-covid-19-ohio/workflows/CI/badge.svg)
-[![Maintainability](https://api.codeclimate.com/v1/badges/85797f96a1268774ec81/maintainability)](https://codeclimate.com/github/tedmiston/wtf-covid-19-ohio/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/85797f96a1268774ec81/test_coverage)](https://codeclimate.com/github/tedmiston/wtf-covid-19-ohio/test_coverage)
+![GitHub Actions Workflow Status](https://github.com/tedmiston/wtf-coronavirus-ohio/workflows/CI/badge.svg)
+[![Maintainability](https://api.codeclimate.com/v1/badges/85797f96a1268774ec81/maintainability)](https://codeclimate.com/github/wtf-coronavirus-ohio/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/85797f96a1268774ec81/test_coverage)](https://codeclimate.com/github/wtf-coronavirus-ohio/test_coverage)
 
 Docker Image: [tedmiston/wtf-covid-19-ohio](https://hub.docker.com/r/tedmiston/wtf-covid-19-ohio)
 
