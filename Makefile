@@ -14,6 +14,10 @@ build-test:
 
 # -- run --
 
+.PHONY: run-local
+run-local:
+	poetry run python -m app
+
 .PHONY: run-docker
 run-docker:
 	docker run --rm $(IMAGE)
