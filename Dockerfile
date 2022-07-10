@@ -5,6 +5,7 @@ WORKDIR /usr/src/app
 RUN pip install --upgrade pip
 RUN pip install poetry
 
+# see `.dockerignore` for whitelisted files
 COPY . .
 
 FROM base AS test
