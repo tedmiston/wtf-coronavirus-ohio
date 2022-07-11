@@ -3,12 +3,15 @@
 !/app/__init__.py
 !/app/__main__.py
 !/app/cache.py
+!/app/display.py
+!/app/fetch.py
 !/app/models.py
+!/app/parse.py
 
 !/poetry.lock
 !/pyproject.toml
 
-!/tests/test_app.py
+!/tests/test_display.py
 
 !/LICENSE
 !/Makefile
