@@ -7,6 +7,8 @@ A [WTF](https://wtfutil.com/) (`wtfutil`) dashboard module for [COVID-19 pandemi
 ![GitHub Actions Workflow Status](https://github.com/tedmiston/wtf-coronavirus-ohio/workflows/CI/badge.svg)
 [![Maintainability](https://api.codeclimate.com/v1/badges/85797f96a1268774ec81/maintainability)](https://codeclimate.com/github/wtf-coronavirus-ohio/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/85797f96a1268774ec81/test_coverage)](https://codeclimate.com/github/wtf-coronavirus-ohio/test_coverage)
+[![PyPI version](https://img.shields.io/pypi/v/boa-str)](https://pypi.org/project/boa-str/)
+[![PyPI downloads](https://img.shields.io/pypi/dm/boa-str)](https://pypi.org/project/boa-str/)
 
 Docker Image: [tedmiston/wtf-covid-19-ohio](https://hub.docker.com/r/tedmiston/wtf-covid-19-ohio)
 
