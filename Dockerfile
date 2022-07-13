@@ -3,7 +3,7 @@ FROM python:3.9.13-slim@sha256:c01a2db78654c1923da84aa41b829f6162011e3a75db255c2
 WORKDIR /usr/src/app
 
 RUN pip install --upgrade pip
-RUN pip install poetry
+RUN pip install poetry --pre
 
 # see `.dockerignore` for whitelisted files
 COPY . .
