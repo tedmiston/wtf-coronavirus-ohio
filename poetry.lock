@@ -47,7 +47,7 @@ lxml = ["lxml"]
 name = "black"
 version = "22.6.0"
 description = "The uncompromising code formatter."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6.2"
 
@@ -99,7 +99,7 @@ unicode_backport = ["unicodedata2"]
 name = "click"
 version = "8.1.3"
 description = "Composable command line interface toolkit"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -110,13 +110,13 @@ colorama = {version = "*", markers = "platform_system == \"Windows\""}
 name = "colorama"
 version = "0.4.5"
 description = "Cross-platform colored terminal text."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
 [[package]]
 name = "coverage"
-version = "6.4.1"
+version = "6.4.2"
 description = "Code coverage measurement for Python"
 category = "dev"
 optional = false
@@ -209,7 +209,7 @@ reports = ["lxml"]
 name = "mypy-extensions"
 version = "0.4.3"
 description = "Experimental type system extensions for programs checked with the mypy typechecker."
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -236,7 +236,7 @@ python-versions = "*"
 name = "pathspec"
 version = "0.9.0"
 description = "Utility library for gitignore style pattern matching of file paths."
-category = "main"
+category = "dev"
 optional = false
 python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,>=2.7"
 
@@ -244,7 +244,7 @@ python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,>=2.7"
 name = "platformdirs"
 version = "2.5.2"
 description = "A small Python module for determining appropriate platform-specific dirs, e.g. a \"user data dir\"."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -422,7 +422,7 @@ python-versions = ">=3.6"
 name = "tomli"
 version = "2.0.1"
 description = "A lil' TOML parser"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -447,7 +447,7 @@ telegram = ["requests"]
 name = "typing-extensions"
 version = "4.3.0"
 description = "Backported and Experimental Type Hints for Python 3.7+"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -485,20 +485,20 @@ python-versions = ">=3.7"
 
 [[package]]
 name = "zipp"
-version = "3.8.0"
+version = "3.8.1"
 description = "Backport of pathlib-compatible object wrapper for zip files"
 category = "dev"
 optional = false
 python-versions = ">=3.7"
 
 [package.extras]
-docs = ["sphinx", "jaraco.packaging (>=9)", "rst.linker (>=1.9)"]
-testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-cov", "pytest-enabler (>=1.0.1)", "jaraco-itertools", "func-timeout", "pytest-black (>=0.3.7)", "pytest-mypy (>=0.9.1)"]
+docs = ["sphinx", "jaraco.packaging (>=9)", "rst.linker (>=1.9)", "jaraco.tidelift (>=1.4)"]
+testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-cov", "pytest-enabler (>=1.3)", "jaraco-itertools", "func-timeout", "pytest-black (>=0.3.7)", "pytest-mypy (>=0.9.1)"]
 
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "f4ccf0b67ee8748d431ae7c57b1e5873524985cd933ee379e3fbac1ca9111159"
+content-hash = "f70e1e782e32102d1017ee18e1da0715894215ca871a5445ade0967f7c44d4d8"
 
 [metadata.files]
 appdirs = [
@@ -769,7 +769,4 @@ websockets = [
     {file = "websockets-10.3-pp37-pypy37_pp73-win_amd64.whl", hash = "sha256:3eda1cb7e9da1b22588cefff09f0951771d6ee9fa8dbe66f5ae04cc5f26b2b55"},
     {file = "websockets-10.3.tar.gz", hash = "sha256:fc06cc8073c8e87072138ba1e431300e2d408f054b27047d047b549455066ff4"},
 ]
-zipp = [
-    {file = "zipp-3.8.0-py3-none-any.whl", hash = "sha256:c4f6e5bbf48e74f7a38e7cc5b0480ff42b0ae5178957d564d18932525d5cf099"},
-    {file = "zipp-3.8.0.tar.gz", hash = "sha256:56bf8aadb83c24db6c4b577e13de374ccfb67da2078beba1d037c17980bf43ad"},
-]
+zipp = []
