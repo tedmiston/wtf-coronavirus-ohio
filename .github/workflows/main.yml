@@ -32,9 +32,7 @@ jobs:
       run: make format-check mypy
 
     - name: Unit Tests
-      run: |
-        make test
-        poetry run coverage xml
+      run: poetry run pytest --cov=app --cov-report=xml
 
     - name: Codecov
       uses: codecov/codecov-action@v3
