@@ -30,7 +30,7 @@ run-docker:
 
 .PHONY: test
 test:
-	poetry run coverage run --source=app --omit=tests/*.py -m pytest
+	poetry run pytest --cov=app
 
 .PHONY: test-docker
 test-docker: build-test

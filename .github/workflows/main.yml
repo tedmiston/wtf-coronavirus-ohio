@@ -35,7 +35,6 @@ jobs:
       run: |
         make test
         poetry run coverage xml
-        wc -l coverage.xml
 
     - name: Codecov
       uses: codecov/codecov-action@v3
