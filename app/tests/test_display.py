@@ -1,5 +1,5 @@
-from app.display import clean
-from app.models import Metric
+from ..display import clean
+from ..models import Metric
 
 
 def test_clean() -> None:
