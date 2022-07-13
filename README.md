@@ -1,6 +1,6 @@
-# WTF COVID-19 Ohio
+# WTF Coronavirus Ohio
 
-A [WTF](https://wtfutil.com/) (`wtfutil`) dashboard module for [COVID-19 pandemic][1] data from the Ohio Department of Health.
+A [WTF](https://wtfutil.com/) (`wtfutil`) dashboard module for [coronavirus pandemic][1] data from the Ohio Department of Health.
 
 ![Docker Image Version](https://img.shields.io/docker/v/tedmiston/wtf-covid-19-ohio?sort=semver)
 ![Code Style: Black](https://img.shields.io/badge/code%20style-black-000000.svg)
