@@ -18,7 +18,7 @@ jobs:
       uses: actions/checkout@v3
 
     - name: Install Poetry
-      run: pipx install poetry --pip-args --pre
+      run: pipx install poetry --pip-args='--pre'
 
     - name: Setup Python
       uses: actions/setup-python@v4
