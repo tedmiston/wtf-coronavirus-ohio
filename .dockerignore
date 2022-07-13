@@ -7,11 +7,11 @@
 !/app/fetch.py
 !/app/models.py
 !/app/parse.py
+!/app/tests/__init__.py
+!/app/tests/test_display.py
 
 !/poetry.lock
 !/pyproject.toml
-
-!/tests/test_display.py
 
 !/LICENSE
 !/Makefile
