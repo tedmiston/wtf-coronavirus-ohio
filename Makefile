@@ -26,6 +26,10 @@ run-local:
 run-docker:
 	docker run --rm $(IMAGE)
 
+.PHONY: debug-docker
+debug-docker:
+	docker run --rm -it --entrypoint=bash $(IMAGE)
+
 # -- test --
 
 .PHONY: test
