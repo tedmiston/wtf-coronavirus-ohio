@@ -48,10 +48,6 @@ mypy:
 
 # -- coverage --
 
-.PHONY: coverage
-coverage:
-	poetry run coverage report
-
 .PHONY: coverage-html
 coverage-html:
 	poetry run coverage html
