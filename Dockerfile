@@ -14,4 +14,4 @@ CMD [ "poetry", "run", "coverage", "run", "--source=.", "-m", "pytest" ]
 
 FROM base AS prod
 RUN poetry install --no-dev
-CMD [ "poetry", "run", "python", "-m", "app" ]
+CMD poetry run python -m app
